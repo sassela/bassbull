@@ -9,8 +9,8 @@ type BaseballStats = (BL.ByteString, Int, BL.ByteString, Int)
 fourth :: (a, b, c, d) -> d
 fourth (_, _, _, d) = d
 
-baseballStats :: BL.ByteString -> Either String (V.Vector BaseballStats)
-baseballStats -> decode NoHeader
+baseballStats :: BL.ByteString -> Records BaseballStats
+baseballStats = decode NoHeader
 
 summer :: (a, b, c, Int) -> Int -> Int
 summer = (+) . fourth

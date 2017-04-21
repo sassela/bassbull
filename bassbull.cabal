@@ -12,7 +12,7 @@ cabal-version:       >=1.10
 
 executable bassbull
   main-is:             Main.hs
-  ghc-options:         -rtsopts -02
+  ghc-options:         -rtsopts -O2
   build-depends:       base
                      , bassbull
                      , bytestring
